@@ -18,7 +18,7 @@ The project is written in Go (Golang), providing a powerful and efficient implem
 
 To initialize territories:
 
-**Endpoint:** `POST localhost:$PORT`
+**Endpoint:** `POST localhost:$PORT/init`
 
 **Request Body:**
 ```json
