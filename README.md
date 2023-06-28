@@ -59,7 +59,7 @@ To set territory upgrades and bonuses:
 }
 ```
 
-Please make sure to replace `$PORT` in the endpoint URLs with the actual port number you're using for the Eco-Engine server. You can also adjust the formatting or add additional explanations as needed for your specific project.
+Please make sure to replace `$PORT` in the endpoint URLs with the actual port number you're using for the eco engine server.
 
 
 
