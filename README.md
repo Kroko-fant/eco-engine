@@ -14,6 +14,9 @@ The project is written in Go (Golang), providing a powerful and efficient implem
 - Can be embedded in a website, used with a web server, or embedded in a desktop application or CLI app
 - Communication over WebSocket or HTTP
 
+## Usage
+Once eco engine is running, you can interact with it through WebSocket or HTTP POST/GET requests to simulate the guild economy. Refer to the documentation or examples provided in the project's repository for detailed instructions on how to communicate with the engine and utilize its features.
+
 ## Example Usage
 
 To initialize territories:
@@ -30,7 +33,7 @@ To initialize territories:
 
 To set territory upgrades and bonuses:
 
-**Endpoint:** `POST http://localhost:$PORT/Mine%20Base%20Plains/set`
+**Endpoint:** `POST http://localhost:$PORT/manage/Mine%20Base%20Plains/set`
 
 **Request Body:**
 ```json
@@ -95,8 +98,6 @@ go build
 
 By default, eco engine will start a web server and listen on a port specified in argv for WebSocket and HTTP communication.
 
-## Usage
-Once eco engine is running, you can interact with it through WebSocket or HTTP POST/GET requests to simulate the guild economy. Refer to the documentation or examples provided in the project's repository for detailed instructions on how to communicate with the engine and utilize its features.
 
 ## Documentations
 Coming soon™️
