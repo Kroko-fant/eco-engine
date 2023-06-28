@@ -18,7 +18,7 @@ The project is written in Go (Golang), providing a powerful and efficient implem
 
 To initialize territories:
 
-**Endpoint:** `POST localhost:$PORT/init`
+**Endpoint:** `POST http://localhost:$PORT/init`
 
 **Request Body:**
 ```json
@@ -30,7 +30,7 @@ To initialize territories:
 
 To set territory upgrades and bonuses:
 
-**Endpoint:** `POST localhost:$PORT/Mine%20Base%20Plains/set`
+**Endpoint:** `POST http://localhost:$PORT/Mine%20Base%20Plains/set`
 
 **Request Body:**
 ```json
@@ -104,5 +104,5 @@ Coming soon™️
 ## Contributing
 Contributions to Eco engine are welcome! If you encounter any issues, have suggestions, or would like to contribute new features, please feel free to open a GitHub issue or submit a pull request.
 
-License
+## License
 This project is licensed under the [Affero General Public License](https://en.wikipedia.org/wiki/Affero_General_Public_License).
