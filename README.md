@@ -1,6 +1,6 @@
 # eco-engine
 
-Eco engine is a dynamic simulator designed to simulate Wynncraft guild economy in real-time. Unlike other eco simulators out there, Eco-Engine accurately replicates the guild's ecosystem, including the real-time travel of resources. Upgrading territories or boosting resource production will result in a delay before the resources arrive, just like in the game.
+Eco engine is a dynamic simulator designed to simulate Wynncraft guild economy in real-time. Unlike other eco simulators out there, eco engine accurately replicates the guild's ecosystem, including the real-time travel of resources. Upgrading territories or boosting resource production will result in a delay before the resources arrive, just like in the game.
 
 The project is written in Go (Golang), providing a powerful and efficient implementation for simulating the guild economy.
 
