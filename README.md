@@ -1,5 +1,4 @@
 # eco-engine
-## A dynamic guild eco simulator
 
 Eco engine is a dynamic simulator designed to simulate Wynncraft guild economy in real-time. Unlike other eco simulators out there, Eco-Engine accurately replicates the guild's ecosystem, including the real-time travel of resources. Upgrading territories or boosting resource production will result in a delay before the resources arrive, just like in the game.
 
@@ -106,4 +105,4 @@ Coming soon™️
 Contributions to Eco engine are welcome! If you encounter any issues, have suggestions, or would like to contribute new features, please feel free to open a GitHub issue or submit a pull request.
 
 License
-This project is licensed under the [GNU General Public License](https://en.wikipedia.org/wiki/GNU_General_Public_License).
+This project is licensed under the [Affero General Public License](https://en.wikipedia.org/wiki/Affero_General_Public_License).
