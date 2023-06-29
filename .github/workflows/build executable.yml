@@ -16,12 +16,12 @@ jobs:
         with:
           go-version: '1.20'
           cache: false
-      - name: Init module
-        run: go mod init -v ./src/
+      - name: Navigate in src dir
+        run: cd ./src/
       - name: Install dependencies
-        run: go install -v ./src/
+        run: go install
       - name: Build
-        run: go build -v ./src/
+        run: go build
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
