@@ -15,8 +15,8 @@ import (
 
 var (
 	t                 map[string]*table.Territory // loaded
-	ut 								map[string]*table.Territory // unloaded
-	st                int // second tick
+	ut                map[string]*table.Territory // unloaded
+	st                int                         // second tick
 	loadedTerritories = make(map[string]*table.Territory)
 )
 
@@ -60,7 +60,7 @@ func setTimeout(f func(args ...interface{}), ms int, args ...interface{}) chan b
 
 func init() {
 	// load all upgrades data
-	var bytes, err = os.ReadFile("./upgrades.json")
+	var bytes, err = os.ReadFile("./data/upgrades.json")
 	if err != nil {
 		panic(err)
 	}
@@ -73,7 +73,7 @@ func init() {
 	}
 
 	var uninitTerritories map[string]table.RawTerritoryData
-	bytes, err = os.ReadFile("./baseProperty.json")
+	bytes, err = os.ReadFile("./data/baseProperty.json")
 	if err != nil {
 		panic(err)
 	}
@@ -165,7 +165,6 @@ func main() {
 
 	var port = os.Args[1]
 
-
 	if port == "" {
 		log.Panicln("$PORT must be set")
 	}
@@ -227,7 +226,7 @@ func main() {
 						HQ:           false,
 					},
 				}
-				
+
 				for _, name := range territories.Territories {
 					// set all the territory properties to 0 or default
 					t[name].Set(*zeroData).SetAllyTax(5).SetOthersTax(60).OpenBorder().Cheapest()
@@ -236,8 +235,6 @@ func main() {
 						t[name].SetHQ()
 					}
 				}
-
-
 
 			}
 		}
@@ -327,7 +324,7 @@ func getPathToHQ(territories map[string]*table.Territory, name string) {
 	var dist int64 = 1
 
 	if territories[name].Property.HQ {
-		return 
+		return
 	}
 
 	var path []string

@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="GoLand Run Configuration" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="eco-engine" />
+    <working_directory value="$PROJECT_DIR$/" />
+    <parameters value="6969" />
+    <kind value="FILE" />
+    <package value="eco-engine" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/src/main.go" />
+    <method v="2" />
+  </configuration>
+</component>
